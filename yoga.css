@@ -1,0 +1,163 @@
+/*
+Path of Light Yoga Studio
+Author: Carmen LaPlace
+Text Edition: 5th
+Date: June 26, 2019
+*/
+/*selector is the body element or other element, declaration property sets the color and the declaration value is the color
+selector {declaration property: declaration value}
+      body {     color:             red}*/
+/* background-color:  background color of element*/
+/* color:  foreground(text) color of element*/
+/* universal selector */
+* { box-sizing: border-box; }
+/* body element selector*/
+body {	background-color: #40407A ; 
+		font-family: Verdana, Arial, sans serif ;	
+			margin: 0 ;
+	 }
+
+/* header element selector*/
+header {	background-color: #40407A ;
+			color: #FFFFFF ;
+			background-image: url(sunrise.jpg) ;
+			background-size: 100% 100% ;
+			margin-top: 50px ;
+			font-size: 120% ;
+			min-height:200px;
+		}
+/* wrapper Id selector */
+#wrapper { background-color: #F5F5F5 ;
+			padding: 2em ;
+			width: 80% ;
+			margin: auto ;
+		}
+/* removes underline */		
+header a {text-decoration: none ;
+		}
+/*stylize header links */
+header a:link { color: #FFFFFF; }
+header a:visited { color: #FFFFFF; }
+header a:hover { color: #EDF5F5;}
+
+
+/* nav element selector*/
+nav { text-align: right ;
+		background-color: #FFFFFF ;
+		margin: 0;
+		padding-top: 0.5em ;
+		padding-bottom: 1em ;
+		padding-right: 0 ;
+		z-index: 9999;
+		width: 100%;
+		height: auto;
+		position: fixed ; top: 0 ; left: 0 ;
+		font-weight: bold;
+	}
+/* removes underline */
+nav a {text-decoration: none ;
+	}
+/* nav unordered list */
+nav ul { list-style-type: none;
+			margin: 0 ;
+			padding-right: 2em ;
+			font-size: 1.2em ;
+			justify-content: nowrap;
+			flex-wrap: nowrap;
+}
+/* nav list item*/
+nav li { display: inline;
+			padding-left: 2em; 
+			width: 7em ;
+}
+/* nav links */
+nav a:link { color: #3f2860 ; }
+nav a:visited { color: #497777 ; }
+nav a:hover { color: #A26100 ; }		
+
+/* home class selector*/
+.home {	height: 50vh;
+		padding-top: 5em;
+		padding-left: 8em;
+	}
+/* content class slector*/
+.content { height: 30vh;
+			padding-top: 2em;
+			padding-left: 8em;
+			}
+			
+/* id selector*/
+#mathero { height: 300px ;
+			background-image: url(yogamat.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			display: block ;
+			padding-bottom: 1em ;
+	}
+/* id selector*/
+#loungehero { height: 300px;
+				background-image: url(yogalounge.jpg);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				display: block ;
+				padding-bottom: 1em;
+	}			
+#flow { flex-direction: row; 
+		display:flex;}
+
+section { padding-left: 2em;
+		  padding-right: 2em; 
+		  }
+		  
+table { border: 1px solid #40407A;
+		margin-bottom: 1em;
+		min-width:400px;
+		border-collapse: collapse;}
+		
+caption { margin: 1em;
+		  font-weight: bold;
+		  font-size: 120%; }
+		  
+td, the { padding: 0.5em;
+		 border: 1px solid #40407A; }
+		 
+tr:nth-of-type(even) {background-color:  #D7E8E9; }
+
+form { background-color: #EAEAEA;
+	   font-family: Arial, sans-serif;
+        width: 350px; padding: 10px;}
+label { float: left; clear: left;
+	    display: block; width: 100px; 
+	    text-align: right; 
+	    padding-right: 10px;
+	    margin-top: 10px; }
+input, textarea { margin-top: 10px; 
+                  display: block;}
+input[type="submit"] { margin-left: 110px; }
+
+@supports (display: grid) {
+  form {  display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 6em 1fr;
+		grid-gap: 1em; gap: 1em;
+		background-color: #EAEAEA;
+	    font-family: Arial, sans-serif;
+        min-width: 25em; width: 60%; 
+		padding: 2em }
+  input[type="submit"] { grid-column: 2 / 3;
+                       width: 10em; margin-left: 0;} 
+}
+input, datalist textarea {margin-bottom: .5em; }
+
+/* Heading h2 text color*/
+h2  { color: #40407A;
+       margin:0;}
+li {font-size: 90%;}
+/*Navigation link background color*/
+nav { background-color: #F5F5F5;}
+/*Color of text and background color for the footer*/
+footer { color: #40407A;
+		 font-size: small;
+		 font-style: italic;
+		 text-align: center;
+		 clear: right;}

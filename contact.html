@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--The above is the first line of a web page document. The Document Type Definition (DTD) identifies the version of HTML.-->
+
+<!--This is the lang attribute to indicate the English language.-->
+<html lang="en">
+<!--This tag contains title element and meta element.-->
+<head>
+<!--
+Path of Light Yoga Studio
+Text Edition 5th
+Author:  Carmen LaPlace
+Date:  June 21, 2019
+-->
+<!--Configures the text that will appear in title bar-->
+<title>Path of Light Yoga Studio</title>
+<!--Describes characteristic of a web page. A form of unicode is utf-8.-->
+<meta charset="utf-8">
+<!--Associate the web page with the external CSS File.-->
+<link href="yoga.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, 
+		intial-scale=1.0">
+</head>
+<body>
+<!--This section contains navigation links.-->
+<nav>
+<!--Anchor element used to link to another web page or file you want to display.-->
+<!--The href attribute configures the hyperlink reference, name and location of file.-->
+<!--Special character nonbreaking space, used to display multiple spaces.-->
+   <ul>
+	 <li><a href="index.html">Home</a></li> 
+     <li><a href="classes.html">Classes</a></li> 
+	 <li><a href="schedule.html">Schedule</a></li>
+	 <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<!--The header element is a block display that could contain one or more heading levels(h1 to h6)-->
+<!-- class selector -->
+<header class="content">
+<!-- This makes title a hyperlink-->
+     <a href="index.html"><h1>Path of Light Yoga Studio</h1></a>
+</header>
+<!-- id selector -->
+<div id="wrapper">
+<!--This is the main content of a web page.-->
+<main>
+
+<!--This is heading level 2.-->
+ <h2>Contact Path of Light Yoga Studio</h2>
+ <p>Required fields are marked with an asterisk *</p>
+ <form method="post" action="https://webdevbasics.net/scripts/yoga.php">
+ 
+ <label for="myName">* Name:</label>
+ <input type="text" name="myName" id="myName">
+ <label for="myEmail">* E-mail:</label>
+ <input type="text" name="myEmail" id="myEmail">
+ <label for="hear">How did you hear about us?</label>
+ <input type="text" name="hear" id="hear" list="browsers">
+	<datalist id="browsers">
+		<option>Google</option>
+		<option>Bing</option>
+		<option>Facebook</option>
+		<option>Friend</option>
+		<option>Radio Ad</option>
+	</datalist
+ <label for="myComments">*Comments:</label>
+ <textarea name="myComments" id="myComments"
+	rows="2" cols="20"> </textarea><br>
+	<input type="submit" value="Send Now">
+</form>
+
+</main>
+<!-- This for any footer content for this web page.-->
+<footer>
+<!--The phrase element small defines a smaller text. The i is for italized.-->
+<!--There are special entity characters like the copyright @.-->
+<!--The line break element allows browser to advance to next line before displaying next element or text.-->
+  Copyright &copy; Path of Light Yoga Studio<br>
+  <!--Use href attribute to configure a hyperlink. This anchor tag can also be used to create email hyperlinks-->
+  <a href="mailto:Carmen@LaPlace.com">Carmen@LaPlace.com</a>
+</footer>
+</d
+iv>
+</body>
+</html>
+
+
+
+
+
